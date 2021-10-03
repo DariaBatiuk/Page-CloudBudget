@@ -34,6 +34,7 @@ nav {
     align-items: center;
 }
 .promo {
+    display: flex;
     height: 100vh;
     padding: 50px 0 187px 0;
     background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../img/header/Rectangle\ 3.jpg) center center/cover no-repeat;
@@ -46,6 +47,8 @@ nav {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px
+    ;
 }
 .promo__menu li {
     display: inline;
@@ -106,7 +109,6 @@ h1{
 }
 .video__text{
     width: 445px;
-    height: 250px;
 }
 .h2_left{
     color: #000000;
@@ -181,6 +183,7 @@ h1{
     font-weight: bold;
     font-size: 12px;
     line-height: 150%;
+    color: #ED4C5C;;
 }
 .technology{
     padding: 63px 0 104px 0;
@@ -230,7 +233,6 @@ h1{
 }
 .app__text{
     width: 445px;
-    height: 267px;
 }
 .app__text_heading{
     font-weight: 600;
@@ -400,10 +402,193 @@ footer{
     content: "";
     cursor: default;
 }
+label{
+    position: absolute;
+    left: 90%;
+    top: 55px;
+    margin: 0 20px 0 0;
+    font-size: 30px;
+    line-height: 100px;
+    color: #FFFFFF;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+
+@media (max-width: 1175px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo{
+        height: 100%;
+    }
+    .overview__img, .overview__text{
+        object-fit: cover;
+        width: 100%;
+    }
+    .footer__subheader{
+        width: 200px;
+    }
+    .feed-form{
+        width: 500px;
+    }
+} 
+@media (max-width: 968px) {
+    .video__wrapper{
+        flex-direction: column;
+    }
+    .video__text{
+        text-align: center;
+    }
+    .video__link{
+        text-align: center;
+        display: block;
+    }
+    .overview__wrapper {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .overview__card{
+        margin-top: 20px;
+    }
+    .technology__icons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .app__wrapper{
+        flex-direction: column;
+        align-items: center; 
+    }
+    h2{
+        text-align: center;
+    }
+    .app__social {
+        display: flex;
+        margin: 25px auto;
+    }
+    .picture{
+        margin: 0 auto;
+    }
+    .contact__wrapper{
+        flex-direction: column;
+    }
+    .button_submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin: 0 auto;
+    }
+       .footer__wrapper{
+        flex-wrap: wrap;
+    }
+    .footer_item{
+        width: 50%;
+        padding: 10px;
+    }
+    .footer__copyrite{
+        margin-top: 15px;
+    }
+} 
+
+@media (min-width: 768px) {
+    .button_hidden{
+        display: none;
+    }
+    .button_shown{
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .promo__menu{
+        text-align: center;
+        flex-direction: column;
+        margin: auto 0;
+        display: none;
+        position: relative;
+        left: -7%;
+    }
+    .promo__menu li{
+       display: block;
+    }
+    #toggle:checked ~ .promo__menu {
+        display: block;
+    }
+    .button_hidden{
+        display: initial;
+    }
+    .button_shown{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+        margin-top: 150px;
+    }
+    .promo__descr{
+        font-size: 16px;
+        width: 70%;
+    }
+}
+@media (max-width: 576px) {
+    .promo, .video, .overview, .technology, .app, .contact, footer{
+       padding: 50px 0 50px 0;  
+    }
+   .video__text, .app__text, .contact__text{
+       width: 100%;
+       padding: 0 20px;
+   } 
+   .picture{
+    margin-top: 0
+    }
+    .img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .overview__img, .overview__text{
+        object-fit: cover;
+        width: 100%;
+    }
+    .h3_contact {
+        width: 100%;
+        text-align: center;
+    }
+    .feed-form{
+        width: 100%;
+    }
+    .app__social{
+        text-align: center;
+        display: block;
+    }
+}
+@media (max-width: 468px){
+    .footer_item{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer__subheader{
+        width: 100%;
+    }
 
 
-
-
-
+}
+@media (max-width: 375px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 26px;
+        line-height: 30px;   
+    }
+    .feed-form input {
+        padding: 21px 0 20px 21px;
+    }
+}
+    
 
 

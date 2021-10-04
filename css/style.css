@@ -4,6 +4,9 @@
     font-weight: normal;
     box-sizing:border-box
 }
+.body{
+    margin: 0;
+}
 .container{
     width: 1150px;
     margin: 0 auto;
@@ -55,12 +58,14 @@ nav {
     cursor: pointer;
 }
 a{
-    font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+}
+a.active, a:hover{
+    font-weight: bold;
 }
 .button {
     width: 100px;
@@ -590,5 +595,3 @@ label{
     }
 }
     
-
-

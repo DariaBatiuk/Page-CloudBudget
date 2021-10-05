@@ -4,7 +4,7 @@
     font-weight: normal;
     box-sizing:border-box
 }
-.body{
+body{
     margin: 0;
 }
 .container{
@@ -64,7 +64,7 @@ a{
     color: #FFFFFF;
     text-decoration: none;
 }
-a.active, a:hover{
+a:hover, .overview__link:hover{
     font-weight: bold;
 }
 .button {
@@ -73,6 +73,13 @@ a.active, a:hover{
     background-color: transparent;
     color: #FFFFFF;
 }
+button:hover, button:focus, button:active{
+    box-shadow: 0 0 20px rgba(99, 18, 18, 0.568);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    font:bold
+}
+
 .promo__wrapper{
     display: flex;
     flex-direction: column;
@@ -185,7 +192,6 @@ h1{
 }
 .overview__link{
     margin-top: 5px;
-    font-weight: bold;
     font-size: 12px;
     line-height: 150%;
     color: #ED4C5C;;
@@ -594,4 +600,3 @@ label{
         padding: 21px 0 20px 21px;
     }
 }
-    

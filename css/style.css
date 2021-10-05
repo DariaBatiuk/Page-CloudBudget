@@ -129,7 +129,7 @@ h1{
 
 .video__link{
     color: #ED4C5C;
-    text-decoration: none;
+    text-transform: none;
 }
 .picture{ 
     margin: 0 auto;
@@ -230,6 +230,12 @@ h1{
     font-size: 18px;
     color: #101010;
 }
+.technology__header1{
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #101010; 
+}
 .technology__subheader{
     margin: 10px auto 0 auto;
     width: 191px;
@@ -323,6 +329,8 @@ footer{
     font-weight: bold;
     font-size: 18px;
     color: #101010;
+    line-height: 22px;
+    text-transform: none;
 }
 .footer__subheader{
     width: 254px;

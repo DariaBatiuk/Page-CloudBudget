@@ -339,6 +339,14 @@ footer{
     line-height: 150%;
     color: #101010;
 }
+.footer__subheader__link{
+    width: 254px;
+    margin-top: 33px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+    text-transform: none;
+}
 .footer__copyrite{
     margin-top: 141px;
     font-size: 12px;

@@ -339,6 +339,11 @@ footer{
     line-height: 150%;
     color: #101010;
 }
+.footer__subheader__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 .footer__subheader__link{
     width: 254px;
     margin-top: 33px;

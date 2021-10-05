@@ -66,6 +66,7 @@ a{
 }
 a:hover, .overview__link:hover{
     font-weight: bold;
+    -webkit-transform: scale(1.1);
 }
 .button {
     width: 100px;
@@ -194,7 +195,9 @@ h1{
     margin-top: 5px;
     font-size: 12px;
     line-height: 150%;
-    color: #ED4C5C;;
+    color: #ED4C5C;
+    text-transform: none;
+    font-weight: bold;
 }
 .technology{
     padding: 63px 0 104px 0;

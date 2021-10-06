@@ -64,10 +64,11 @@ a{
     color: #FFFFFF;
     text-decoration: none;
 }
-a:hover, .overview__link:hover{
+a:hover, .overview__link:hover, .footer__heading:hover{
     font-weight: bold;
     -webkit-transform: scale(1.1);
 }
+
 .button {
     width: 100px;
     height: 40px;
@@ -331,6 +332,7 @@ footer{
     color: #101010;
     line-height: 22px;
     text-transform: none;
+    display: inline-block;
 }
 .footer__subheader{
     width: 254px;
@@ -357,8 +359,22 @@ footer{
     font-size: 12px;
     color: #101010;
 }
+.footer__header_email, .footer__header_email{
+    text-transform: none;
+}
 .footer__social{
     margin-top: 20px;
+}
+.footer__picture{
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.footer__picture:hover{
+    font-weight: bold;
+    -webkit-transform: scale(1.);
+
 }
 .modal{
     display: none;
@@ -609,8 +625,6 @@ label{
     .footer__subheader{
         width: 100%;
     }
-
-
 }
 @media (max-width: 375px){
     h1{

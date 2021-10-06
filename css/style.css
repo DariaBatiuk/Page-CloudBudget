@@ -2,7 +2,7 @@
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    box-sizing:border-box
+    box-sizing:border-box;
 }
 body{
     margin: 0;
@@ -50,8 +50,7 @@ nav {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px
-    ;
+    padding: 0 20px;
 }
 .promo__menu li {
     display: inline;
@@ -68,7 +67,6 @@ a:hover, .overview__link:hover, .footer__heading:hover{
     font-weight: bold;
     -webkit-transform: scale(1.1);
 }
-
 .button {
     width: 100px;
     height: 40px;
@@ -79,9 +77,8 @@ button:hover, button:focus, button:active{
     box-shadow: 0 0 20px rgba(99, 18, 18, 0.568);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    font:bold
+    font:bold;
 }
-
 .promo__wrapper{
     display: flex;
     flex-direction: column;
@@ -373,8 +370,7 @@ footer{
 }
 .footer__picture:hover{
     font-weight: bold;
-    -webkit-transform: scale(1.);
-
+    -webkit-transform: scale(1.4);
 }
 .modal{
     display: none;
@@ -475,13 +471,16 @@ label{
     .promo{
         height: 100%;
     }
+    .overview__wrapper{
+        flex-wrap: wrap;
+    }
+    .overview__card{
+        margin-top: 20px;
+    }
     .overview__img {
         object-fit: cover;
         width: 100%;
-    }
-    .overview__text{
-        width: 90%;
-    }
+    }    
     .footer__subheader{
         width: 200px;
     }
@@ -496,21 +495,11 @@ label{
     .video__text{
         text-align: center;
     }
-    .video__link{
+    .video__link{        
         text-align: center;
         display: block;
-    }
-    .overview__wrapper {
-        flex-direction: column;
-        margin-top: 0;
-    }
-    .overview__img{
-        width: 350px;
-    }
-    .overview__card{
-        margin-top: 20px;
-    }
-    .technology__icons{
+    }   
+   .technology__icons{
         flex-direction: column;
         align-items: center;
     }
@@ -548,7 +537,6 @@ label{
         margin-top: 15px;
     }
 } 
-
 @media (min-width: 768px) {
     .button_hidden{
         display: none;
@@ -606,9 +594,6 @@ label{
         width: 100%;
         object-fit: cover;
     }
-    .overview__img {
-        object-fit: cover;
-    }
     .h3_contact {
         width: 100%;
         text-align: center;
@@ -622,13 +607,6 @@ label{
     }
 }
 @media (max-width: 468px){
-    .overview__img{
-        width: 100%;
-    }
-    .overview__text{
-        width: 90%;
-        height: 180px;
-    }
     .footer_item{
         width: 100%;
         padding: 20px;

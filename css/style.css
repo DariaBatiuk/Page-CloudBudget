@@ -475,9 +475,12 @@ label{
     .promo{
         height: 100%;
     }
-    .overview__img, .overview__text{
+    .overview__img {
         object-fit: cover;
         width: 100%;
+    }
+    .overview__text{
+        width: 90%;
     }
     .footer__subheader{
         width: 200px;
@@ -500,6 +503,9 @@ label{
     .overview__wrapper {
         flex-direction: column;
         margin-top: 0;
+    }
+    .overview__img{
+        width: 350px;
     }
     .overview__card{
         margin-top: 20px;
@@ -600,9 +606,8 @@ label{
         width: 100%;
         object-fit: cover;
     }
-    .overview__img, .overview__text{
+    .overview__img {
         object-fit: cover;
-        width: 100%;
     }
     .h3_contact {
         width: 100%;
@@ -617,6 +622,13 @@ label{
     }
 }
 @media (max-width: 468px){
+    .overview__img{
+        width: 100%;
+    }
+    .overview__text{
+        width: 90%;
+        height: 180px;
+    }
     .footer_item{
         width: 100%;
         padding: 20px;

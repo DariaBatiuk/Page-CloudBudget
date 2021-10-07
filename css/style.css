@@ -19,7 +19,7 @@ button{
     cursor: pointer;
 }
 h2{
-    font-weight: 600;
+    font-weight: 300;
     font-size: 36px;
     line-height: 43px;
 }
@@ -63,7 +63,7 @@ a{
     color: #FFFFFF;
     text-decoration: none;
 }
-a:hover, .overview__link:hover, .footer__heading:hover{
+a:hover, .overview__link:hover{
     font-weight: bold;
     -webkit-transform: scale(1.1);
 }
@@ -86,9 +86,8 @@ button:hover, button:focus, button:active{
 }
 h1{
     margin-top: 140px;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 72px;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -96,7 +95,7 @@ h1{
     width: 540px;
     height: 124px;
     margin-top: 39px;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 24px;
     line-height: 150%;
     text-align: center;
@@ -266,6 +265,11 @@ h1{
 }
 .app__social{
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.app__picture{
+    margin-right: 23px;
 }
 .img{
     border-radius: 15px;
@@ -467,9 +471,6 @@ label{
     .container{
         width: 100%;
         padding: 0 10px;
-    }
-    .promo{
-        height: 100%;
     }
     .overview__wrapper{
         flex-wrap: wrap;

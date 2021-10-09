@@ -581,11 +581,13 @@ label{
         left: -100%;
         padding: 20px;
         transition: all .9s;
-        border-radius: 15px;
+        bottom: 0;
+        margin-bottom: 0px;
+        height: auto;
     }
     .promo__menu li{
-        font-size: 30px;
-        margin: 10px;
+        font-size: 22px;
+        margin: 5px;
     }
     
    

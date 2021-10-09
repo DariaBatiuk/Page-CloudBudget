@@ -63,7 +63,7 @@ a{
     color: #FFFFFF;
     text-decoration: none;
 }
-a:hover, .overview__link:hover{
+a:hover, .overview__link:hover, .app__picture:hover{
     font-weight: bold;
     -webkit-transform: scale(1.1);
 }
@@ -628,10 +628,7 @@ label{
     .feed-form{
         width: 100%;
     }
-    .app__social{
-        text-align: center;
-        display: block;
-    }
+
 }
 @media (max-width: 468px){
     .footer_item{

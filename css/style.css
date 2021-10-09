@@ -514,6 +514,7 @@ label{
     .app__social {
         display: flex;
         margin: 25px auto;
+        justify-content: center;
     }
     .picture{
         margin: 0 auto;
